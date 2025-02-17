@@ -38,14 +38,8 @@
             </template>
           </el-menu-item>
         </RouterLink>
-        <RouterLink to="/reports">
-          <el-menu-item index="4">
-            <el-icon><Histogram /></el-icon>
-            <span>Reports</span>
-          </el-menu-item>
-        </RouterLink>
         <RouterLink to="/activitylogs">
-          <el-menu-item index="5">
+          <el-menu-item index="4">
             <el-icon><Tickets /></el-icon>
             <span>Activity Logs</span>
           </el-menu-item>
@@ -66,12 +60,10 @@
 
 <script>
 import { ref } from 'vue'
-import { Histogram, User, Box, Tickets, HomeFilled } from '@element-plus/icons-vue'
+import { User, Box, Tickets, HomeFilled } from '@element-plus/icons-vue'
 
 export default {
-  components: {
-    Histogram,
-    User,
+  components: {    User,
     Box,
     Tickets,
     HomeFilled,
