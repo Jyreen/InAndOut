@@ -5,7 +5,7 @@
         active-text-color="#1f8e7e"
         background-color="#fff"
         class="el-menu-vertical-demo"
-        default-active="2"
+        default-active="1"
         text-color="#000000"
         @open="handleOpen"
         @close="handleClose"
@@ -97,8 +97,8 @@ export default {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 80px; /* Adjust height as needed */
-  pointer-events: none; /* Disable hover effect */
+  height: 80px; 
+  pointer-events: none;
 }
 
 .no-hover img {
@@ -106,8 +106,13 @@ export default {
   max-width: 100%;
   height: auto;
 }
+.el-menu {
+  border-radius: 20px; 
+  overflow: hidden;
+}
 
-el-menu-item {
-  text-decoration: none !important;
+.el-menu-item {
+  border-radius: 10px; 
+  margin: 5px;
 }
 </style>
